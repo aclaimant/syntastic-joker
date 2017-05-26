@@ -8,7 +8,7 @@ This is a syntax checker for
 
 Syntastic and Joker must both be installed and working.
 
-### Vundle
+### [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 In `.vimrc`:
 
@@ -17,3 +17,13 @@ Plugin 'aclaimant/syntastic-joker'
 ```
 
 and run `:PluginInstall` within Vim.
+
+### [vim-plug](https://github.com/junegunn/vim-plug)
+
+In `.vimrc`:
+
+```
+Plug 'aclaimant/syntastic-joker'
+```
+
+and run `:PlugInstall` within Vim.
