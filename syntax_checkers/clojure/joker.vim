@@ -22,7 +22,7 @@ endfunction
 function! SyntaxCheckers_clojure_joker_GetLocList() dict
     let makeprg = self.makeprgBuild({'args': '--lint'})
 
-    let errorformat = '%f:%l:%c: %m'
+    let errorformat = '%f:%l:%c: %*[^ ] %t%*[^:]: %m'
     return SyntasticMake({ 'makeprg': makeprg, 'errorformat': errorformat })
 endfunction
 
